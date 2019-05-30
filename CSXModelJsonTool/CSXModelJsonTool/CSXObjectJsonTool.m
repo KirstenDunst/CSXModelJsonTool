@@ -20,7 +20,7 @@
         NSString *propName = [NSString stringWithUTF8String:property_getName(prop)];
         id value = [obj valueForKey:propName];
         if(value == nil) {
-            value = [NSNull null];
+            value = [self getValueWithPropName:prop];
         } else { 
             value = [self getObjectInternal:value];
         }
@@ -30,9 +30,27 @@
 }
 
 + (void)print:(id)obj {
+#ifdef DEBUG
     NSLog(@"%@", [self getObjectData:obj]);
+#else
+#endif
 }
 
++ (id)getValueWithPropName:(objc_property_t)obj {
+    //获取属性类型等参数（字段的类型）
+    NSString *propertyType = [NSString stringWithCString: property_getAttributes(obj) encoding:NSUTF8StringEncoding];
+    NSLog(@">>>>>>>>>>>>>>%@",propertyType);
+    if ([propertyType hasPrefix:@"T@\"NSString\""]) {
+        return @"";
+    }
+    if ([propertyType hasPrefix:@"T@\"NSData\""]) {
+        return [NSNumber numberWithBool:0];
+    }
+    if ([propertyType hasPrefix:@"Ti"]||[propertyType hasPrefix:@"TI"]||[propertyType hasPrefix:@"Ts"]||[propertyType hasPrefix:@"TS"]||[propertyType hasPrefix:@"TB"]||[propertyType hasPrefix:@"Tq"]||[propertyType hasPrefix:@"TQ"]) {
+        return [NSNumber numberWithInteger:0];
+    }
+    return [NSNull null];
+}
 
 
 + (NSData*)getJSON:(id)obj options:(NSJSONWritingOptions)options error:(NSError**)error {

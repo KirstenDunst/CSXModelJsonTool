@@ -9,27 +9,20 @@
      '-./            \  /            \.-'
                       ''*/
 //
-//  FBMineJsonModel.h
-//  FSFuBei
+//  DetailModel.h
+//  CSXModelJsonTool
 //
-//  Created by 曹世鑫 on 2019/5/27.
+//  Created by 曹世鑫 on 2019/5/30.
 //  Copyright © 2019 曹世鑫. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "DetailModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CSXModelJSON : NSObject
+@interface DetailModel : NSObject
 
 @property (nonatomic, copy)NSString *nameStr;
-@property (nonatomic, assign)float cellHeight;
-@property (nonatomic, assign)NSInteger age;
-@property (nonatomic, assign)double one;
-@property (nonatomic, assign)NSUInteger two;
-@property (nonatomic, strong)NSNumber *three;
-@property (nonatomic, strong)DetailModel *detailModel;
 
 @end
 

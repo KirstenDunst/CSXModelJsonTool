@@ -24,7 +24,6 @@
     [btn addTarget:self action:@selector(dealThe:) forControlEvents:UIControlEventTouchUpInside];
     btn.frame = CGRectMake(50, 100, 80, 50);
     [self.view addSubview:btn];
-    
 }
 
 - (void)dealThe:(UIButton *)sender {

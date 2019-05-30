@@ -17,6 +17,7 @@
 		DB22D6A7229B941600E33895 /* CSXModelJsonToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22D6A6229B941600E33895 /* CSXModelJsonToolUITests.m */; };
 		DB22D6B8229B946D00E33895 /* CSXObjectJsonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22D6B4229B946D00E33895 /* CSXObjectJsonTool.m */; };
 		DB22D6B9229B946D00E33895 /* CSXModelJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22D6B7229B946D00E33895 /* CSXModelJSON.m */; };
+		DB2CE048229F5EDE00972D81 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2CE047229F5EDE00972D81 /* DetailModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		DB22D6B5229B946D00E33895 /* CSXObjectJsonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSXObjectJsonTool.h; sourceTree = "<group>"; };
 		DB22D6B6229B946D00E33895 /* CSXModelJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSXModelJSON.h; sourceTree = "<group>"; };
 		DB22D6B7229B946D00E33895 /* CSXModelJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSXModelJSON.m; sourceTree = "<group>"; };
+		DB2CE046229F5EDE00972D81 /* DetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
+		DB2CE047229F5EDE00972D81 /* DetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				DB22D683229B941300E33895 /* AppDelegate.m */,
 				DB22D685229B941300E33895 /* ViewController.h */,
 				DB22D686229B941300E33895 /* ViewController.m */,
+				DB2CE046229F5EDE00972D81 /* DetailModel.h */,
+				DB2CE047229F5EDE00972D81 /* DetailModel.m */,
 				DB22D6B6229B946D00E33895 /* CSXModelJSON.h */,
 				DB22D6B7229B946D00E33895 /* CSXModelJSON.m */,
 				DB22D6B5229B946D00E33895 /* CSXObjectJsonTool.h */,
@@ -274,6 +279,7 @@
 			files = (
 				DB22D6B8229B946D00E33895 /* CSXObjectJsonTool.m in Sources */,
 				DB22D6B9229B946D00E33895 /* CSXModelJSON.m in Sources */,
+				DB2CE048229F5EDE00972D81 /* DetailModel.m in Sources */,
 				DB22D687229B941300E33895 /* ViewController.m in Sources */,
 				DB22D692229B941500E33895 /* main.m in Sources */,
 				DB22D684229B941300E33895 /* AppDelegate.m in Sources */,
